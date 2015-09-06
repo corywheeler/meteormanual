@@ -15,9 +15,17 @@ if (Meteor.isClient) {
         favoriteFoodDep.changed();
     }
 
+    var getRandomNumber = function() {
+        favoriteFoodDep.depend();
+        return Math.random();
+    }
+
     Template.favoriteFood.helpers({
-        "is" : function() {
-            return 'is ' + getFavoriteFood();
+        "favoriteFood" : function() {
+            return getFavoriteFood();
+        },
+        "randomNumber": function() {
+            return getRandomNumber();
         }
     })
 
