@@ -24,7 +24,7 @@ var handle = Tracker.autorun(function() {
     // which has been made into a reactive variable. It will run
     // regardless of what route you are on.
     console.log('Your favorite food is ' + getFavoriteFood());
-})
+});
 
 Template.favoriteFood.helpers({
     "favoriteFood" : function() {
