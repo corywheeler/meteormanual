@@ -8,6 +8,7 @@ var getFavoriteFood = function() {
 }
 
 var setFavoriteFood = function(newValue) {
+    console.log('setFavoriteFood just ran.')
     favoriteFood = newValue;
     favoriteFoodDep.changed();
 }
